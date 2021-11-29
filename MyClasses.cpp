@@ -33,9 +33,21 @@ void  User::printUser(){
 
 void Student::printUser(){
      cout<<this->name<<"'s score is "<<this->score<<endl;
-     cout<<"Here is the printUser of the Student."<<endl;
+     cout<<"In total there are "<<GetNrStudents()<<" students."<<endl;
    }
 
 Student::Student(string n, int s):User(n){
   this->score=s;
+  ComputeNrObjectsCreated();
 }
+
+void Student::ComputeNrObjectsCreated(){
+  this->NrStudents++;
+}
+
+int Student::NrStudents=0;
+
+int Student::GetNrStudents(){
+  return this->NrStudents;
+}
+

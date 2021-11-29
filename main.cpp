@@ -73,21 +73,7 @@ cout<<"It should rotate "<<Angle<<" degree to arrive number "<<(NrEmpty+1)<<endl
 }
 
 int main()
-{   /*
-    int i;
-
-    cout<<"Please input the states of 12 positions."<<endl;
-
-    for( i=0;i<NrPositions;i++)
-     cin>>Position[i];
-
-    cout<<"The states of 12 positions are: "<<endl;
-    for(i=0;i<NrPositions;i++)
-     cout<<Position[i]<<"\t";
-    cout<<endl;
-
-    ComputeAngle();
-    */
+{
 
     /*
      User user1("Xiaoyu");
@@ -99,8 +85,10 @@ int main()
     */
 
     Student x("Xiaoyu",100);
-    //x.SetScore(100);
+    Student y("Linda",80),Z("David",89);
+
     x.printUser();
+
 
     return 0;
 }

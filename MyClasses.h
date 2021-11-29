@@ -20,12 +20,14 @@ public :
 };
 
 class Student:public User{
+   static int NrStudents;
    int score;
-
+   void ComputeNrObjectsCreated();
 public:
 
     virtual void printUser();
     Student(string n,int s);
+    int GetNrStudents();
 };
 
 
