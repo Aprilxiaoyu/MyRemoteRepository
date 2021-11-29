@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <array>
+#include "MyClasses.h"
 
 using std::cout;
 using std::cin;
@@ -72,14 +73,8 @@ cout<<"It should rotate "<<Angle<<" degree to arrive number "<<(NrEmpty+1)<<endl
 }
 
 int main()
-{
-    //std::vector<Myclass> persons;
-    //Myclass Lily("Lily");
-    //persons.push_back(Lily);
-    //cout<<persons[0].get_age()<<endl;
-
+{   /*
     int i;
-
 
     cout<<"Please input the states of 12 positions."<<endl;
 
@@ -91,7 +86,21 @@ int main()
      cout<<Position[i]<<"\t";
     cout<<endl;
 
-
     ComputeAngle();
+    */
+
+    /*
+     User user1("Xiaoyu");
+     User user2(" Qu");
+     User user3=user1+user2;
+
+     cout<<user3.name<<endl;
+     cout<<user3.get_age()<<endl;
+    */
+
+    Student x("Xiaoyu",100);
+    //x.SetScore(100);
+    x.printUser();
+
     return 0;
 }

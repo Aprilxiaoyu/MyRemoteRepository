@@ -4,6 +4,7 @@
 #include <iostream>
 
 using std::string;
+using std::cout;
 
 class User{
   int age;
@@ -14,7 +15,17 @@ public :
 
   User(string name);
   ~User();
+  User operator+(User &u1);
+  void printUser();
+};
 
+class Student:public User{
+   int score;
+
+public:
+
+    virtual void printUser();
+    Student(string n,int s);
 };
 
 

@@ -19,3 +19,23 @@ User::User(string name){
 User::~User(){
    cout<<"destructor \n";
 }
+
+User User::operator+(User &u1){
+
+  this->name=this->name+u1.name;
+  this->age=u1.get_age()+this->age;
+  return *this;
+}
+
+void  User::printUser(){
+  cout<<this->name<<"'s age is"<<this->age<<endl;
+}
+
+void Student::printUser(){
+     cout<<this->name<<"'s score is "<<this->score<<endl;
+     cout<<"Here is the printUser of the Student."<<endl;
+   }
+
+Student::Student(string n, int s):User(n){
+  this->score=s;
+}
