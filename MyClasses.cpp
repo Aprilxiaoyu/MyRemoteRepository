@@ -51,3 +51,23 @@ int Student::GetNrStudents(){
   return this->NrStudents;
 }
 
+void Student::SetNrSubjects(int N){
+  this->NrSubjects=N;
+}
+
+PrimaryStudent::PrimaryStudent(string namestr,int Nr):User(namestr){
+  this->NrSubjects=Nr;
+}
+
+//friend function do not belong to ant class
+void TotalSubjects(Student s1, PrimaryStudent s2){
+   cout<<"Total Subjects are "<< s1.NrSubjects+s2.NrSubjects<<endl;
+}
+
+int MiddleStudent::MutipltScore(PrimaryStudent &s){
+  return (this->MathScore)*(s.NrSubjects);
+}
+
+MiddleStudent::MiddleStudent(string str, int n):User(str){
+  this->MathScore=n;
+}

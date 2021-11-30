@@ -74,20 +74,13 @@ cout<<"It should rotate "<<Angle<<" degree to arrive number "<<(NrEmpty+1)<<endl
 
 int main()
 {
-
-    /*
-     User user1("Xiaoyu");
-     User user2(" Qu");
-     User user3=user1+user2;
-
-     cout<<user3.name<<endl;
-     cout<<user3.get_age()<<endl;
-    */
-
     Student x("Xiaoyu",100);
-    Student y("Linda",80),Z("David",89);
+    x.SetNrSubjects(10);
+    PrimaryStudent y("David",8);
+    MiddleStudent  z("Linda",10);
+    TotalSubjects(x,y);
 
-    x.printUser();
+    cout<<"z.MathScore * y.NrSubjects = "<<z.MutipltScore(y)<<endl;
 
 
     return 0;
