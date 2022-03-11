@@ -131,6 +131,7 @@ int main()
     cout<<"num1*num2="<<*(p+2)<<endl;
     cout<<"num1/num2="<<*(p+3)<<endl;
 
+    cout<<"Hello the world!"<<endl;
 
     return 0;
 }
