@@ -19,7 +19,7 @@ public :
   User(string name);
   ~User();
   User operator+(User &u1);
-  void printUser();
+  virtual void printUser();
 };
 
 class Student:public User{
@@ -30,7 +30,7 @@ class Student:public User{
    void ComputeNrObjectsCreated();
 
 public:
-    virtual void printUser();
+    void printUser();
     Student(string n,int s);
     int GetNrStudents();
     void SetNrSubjects(int);
@@ -48,10 +48,20 @@ public:
 class MiddleStudent:public User{
     int MathScore;
 public:
-
      int MutipltScore(PrimaryStudent &s);
      MiddleStudent(string str,int n);
 };
 
+class base{
+ public: int var_base;
+  void print();
+  int add(int a, int b);
+};
+
+class derived: public base{
+ public: int var_derived;
+ virtual void print();
+ virtual void print(int r);
+};
 
 #endif // MYCLASSES_H_INCLUDED

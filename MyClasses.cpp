@@ -28,12 +28,14 @@ User User::operator+(User &u1){
 }
 
 void  User::printUser(){
-  cout<<this->name<<"'s age is"<<this->age<<endl;
+  //cout<<this->name<<"'s age is"<<this->age<<endl;
+  cout<<"Print User from User Class."<<endl;
 }
 
 void Student::printUser(){
-     cout<<this->name<<"'s score is "<<this->score<<endl;
-     cout<<"In total there are "<<GetNrStudents()<<" students."<<endl;
+  cout<<"Print from Student Class."<<endl;
+     //cout<<this->name<<"'s score is "<<this->score<<endl;
+     //cout<<"In total there are "<<GetNrStudents()<<" students."<<endl;
    }
 
 Student::Student(string n, int s):User(n){
@@ -70,4 +72,20 @@ int MiddleStudent::MutipltScore(PrimaryStudent &s){
 
 MiddleStudent::MiddleStudent(string str, int n):User(str){
   this->MathScore=n;
+}
+
+int base::add(int a, int b){
+ return(a+b);
+}
+
+void base::print(){
+  cout<<"This is base print."<<endl;
+}
+
+void derived::print(int r){
+  cout<<"Derived print the result is: "<<r<<endl;
+}
+
+void derived::print(){
+  cout<<"This is derived print."<<endl;
 }
