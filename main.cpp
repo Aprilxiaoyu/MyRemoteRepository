@@ -29,6 +29,7 @@ int main()
     for(i=0;i<NrResults;i++)
         cout<<"result"<<i+1<<" is "<<*(p+i)<<endl;
 
+    cout<<"Hello the world!"<<endl;
     free(p);
     return 0;
 }
