@@ -30,6 +30,7 @@ int main()
         cout<<"result"<<i+1<<" is "<<*(p+i)<<endl;
 
     cout<<"Hello the world!"<<endl;
+    cout<<"This is Branch_Test!"<<endl;
     free(p);
     return 0;
 }
